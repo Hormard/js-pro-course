@@ -1,1 +1,4 @@
-# js-pro-course
+## js-pro-course
+___
+___Евгений Волынец___
+
