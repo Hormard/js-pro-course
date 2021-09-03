@@ -14,9 +14,9 @@ document.addEventListener("DOMContentLoaded", app)
 
 function app(){
     getTime()
-    getWeatherData('Minsk')
+    getWeather('Minsk')
     button.addEventListener('click' , () => {
-        getWeatherData(input.value)
+        getWeather(input.value)
         input.value = ''  
     })    
 }        
@@ -28,16 +28,17 @@ function getTime(){
     }, 1000);
 }
 
-async function getWeatherData(city) {
+async function getWeather(city) {
     try{
         let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=e2df985448d31c43026b448cc7259c06`)
         let data = await response.json()
+        console.log(data);
         render(data)
     }
     catch{
         modal.classList.add('open')
         modalButton.addEventListener('click', () => modal.classList.remove('open'))
-        getWeatherData('Minsk')
+        getWeather('Minsk')
     }
 }
 
