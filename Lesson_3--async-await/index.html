@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>Weather</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="weather">
+            <div class="weather__header">
+                <h1 class="weather__header-title">Retro Weather</h1>
+                <form method="dialog" class="weather__form">
+                    <input type="text" class="weather__header-input">
+                    <button class="weather__button">Find</button>
+                </form>
+                <p class="weather__header-date"></p>
+            </div>
+            <div class="weather__main">
+                <div class="weather__main-conatainer">
+                    <img src="" alt="" class="img">
+                    <h2 class="weather__main-title"></h2>
+                </div>
+                <div class="weather__temperature">
+                    <p class="weather__temaperature-current"> </p>
+                    <p class="weather__feels_like"></p>
+                </div>
+                <div class="weather__info">
+                    <p class="weather__wind-speed"></p>
+                    <p class="weather__wind-status"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <h3 class="modal__text">Ooops... this city does not exist. Return to Minsk :3</h3>
+        <button class="modal__button">Ok</button>
+    </div>
+</body>
+</html>

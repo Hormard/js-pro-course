@@ -1,0 +1,123 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 1920;
+    height: 100vh;
+    margin: 0 auto;
+    font-family: 'Indie Flower', cursive;
+    background: url(img/clouds.jpg);
+}
+
+.weather {
+    width: 60%;
+    height: 50%;
+    margin: 0 auto;
+    background-color: rgb(255, 224, 231);
+    border: 2px solid rgb(34, 34, 34);
+    border-radius: 7%;
+}
+
+.weather__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin-bottom: 15px;
+    padding: 20px 20px;
+}
+
+.weather__form {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.weather__header-title {
+    font-size: 30px;
+}
+
+.weather__header-date {
+    width: 180px;
+    font-size: 25px;
+}
+
+.weather__header-input {
+    width: 40%;
+    border: 0;
+    border-radius: 15% 0 0 15%;
+    border: 1px solid #333;
+
+}
+
+.weather__button {
+    font-family: 'Indie Flower', cursive;
+    background-color: tomato;
+    border: 0;
+    border-radius: 0 15% 15% 0;
+    border: 1px solid #333;
+}
+
+
+.weather__main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
+.weather__main-title {
+    font-size: 45px;
+}
+
+.weather__temperature {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.weather__info {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    font-size: 30px;
+}
+
+.weather__main-conatainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.modal{
+    display: none;
+}
+
+.open {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    height: 48%;
+    transform: translate(-50%, -50%);
+    border-radius: 15%;
+    background: url(img/shrek-meme.jpg) no-repeat  center / cover;;
+}
+
+.modal__text{
+    font-family: 'Indie Flower', cursive;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+}
+
+.modal__button{
+    width: 15%;
+    height: 15%;
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+}
